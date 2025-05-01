@@ -1,12 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import Services from '@/components/Services';
+import Partners from '@/components/Partners';
+import Achievements from '@/components/Achievements';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 const Index = () => {
+  // Replace with your actual Google Analytics Measurement ID
+  const gaMeasurementId = "G-XXXXXXXXXX";
+  
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-white">
+      <GoogleAnalytics measurementId={gaMeasurementId} />
+      <Navbar />
+      <Hero />
+      <Services />
+      <Partners />
+      <Achievements />
+      <Contact />
+      <Footer />
     </div>
   );
 };
