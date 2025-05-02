@@ -263,68 +263,63 @@
 
       /* Hero Section */
       .hero {
-        padding-top: 9rem;
-        padding-bottom: 2rem;
-        background: linear-gradient(to bottom, var(--ai-bg), white);
-      }
+  padding-top: 9rem;
+  padding-bottom: 2rem;
+  background: linear-gradient(to bottom, var(--ai-bg), white);
+  margin-left: 250px;
+  margin-bottom: 30px;
+}
 
-      .hero-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        gap: 2rem;
-      }
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; /* Changed to give text more space */
+  align-items: center;
+  gap: 2rem;
+}
 
-      .hero-text {
-        animation-delay: 0.2s;
-      }
+.hero-text {
+  animation-delay: 0.2s;
+}
 
-      .hero-text h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-      }
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
 
-      .hero-text p {
-        font-size: 1.125rem;
-        color: #4b5563;
-        margin-bottom: 2rem;
-      }
+.hero-text p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
 
-      .hero-buttons {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 
-      .hero-image {
-        position: relative;
-        animation-delay: 0.4s;
-        background-image: url("https://maheshmthakur.com/wp-content/uploads/2025/04/maheesh-banner-25v1.jpg");
-        width: 1200px;
-        height: 500px;
-      }
+.hero-image {
+  position: relative;
+  animation-delay: 0.4s;
+  width: 60%; /* Reduced from 1200px */
+  height: 350px; /* Reduced from 500px */
+  justify-self: center; /* Aligns to the right side of its grid cell */
+}
 
-      .hero-image::before {
-        content: '';
-        position: absolute;
-        top: -8px;
-        /* left: -8px;
-        right: -8px;
-        bottom: -8px;
-        background: linear-gradient(to right, var(--ai-blue), var(--ai-purple));
-        border-radius: 0.5rem;
-        opacity: 0.3;
-        filter: blur(8px);
-        z-index: -1; */
-      }
+.hero-image::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  /* Other before styles commented out in your original */
+}
 
-      .hero-image img {
-        border-radius: 0.5rem;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        background-image: url("https://maheshmthakur.com/wp-content/uploads/2025/04/maheesh-banner-25v1.jpg");
-        width: 1300px;
-        height: 600px;
-      }
+.hero-image img {
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Made responsive to parent */
+  height: 100%; /* Made responsive to parent */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
 
       /* Services Section */
       .services {
@@ -924,8 +919,10 @@
     <!-- Hero Section -->
     <section id="home" class="hero section-padding">
       <div class="container">
-        <div class="hero-content hero-image"></div>
-          
+        <div class="hero-content hero-image">
+          <img src="./src/images/Mahesh.jpeg" alt="Hero Image" class="img-fluid" />
+        </div>
+      </div>
     </section>
     
     <!-- Services Section -->
