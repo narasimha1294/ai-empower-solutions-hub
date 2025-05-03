@@ -27,32 +27,36 @@
       <!-- Navbar -->
       <nav class="bg-white py-4 sticky top-0 z-50 shadow-sm">
         <div class="container mx-auto flex justify-between items-center px-6">
+          <div id="menucontent">
+          <div id="menuitems">
+            <div id="#imagesection">
           <a href="/" class="flex items-center">
-            <img src="./src/images/Logo.png" />
+            <img src="./src/images/Logo.png" id="logoimage"/>
           </a>
-          
+        </div>
+        <div id="menusection">
           <!-- Mobile menu button -->
           <button 
             class="md:hidden text-gray-700 mobile-menu-button"
-            aria-label="Toggle menu"
+            aria-label="Toggle menu" id="togglemenubutton"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="x-icon hidden"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
           </button>
           
           <!-- Desktop navigation -->
-          <div class="hidden md:flex space-x-6">
+          <div class="hidden md:flex space-x-6" id="desktopvisibile">
             <a href="#services" class="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Services</a>
             <a href="#experience" class="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Advising</a>
             <a href="#courses" class="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Masterminds</a>
-            <a href="#services" class="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Executive Coaching</a>
+            <a href="#services" class="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">ExecutiveCoaching</a>
             <a href="#newsletter" class="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">About</a>
             <a href="#articles" class="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Resources</a>
             <a href="#testimonials" class="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Testimonials</a>
           </div>
           
           <!-- Mobile navigation -->
-          <div class="absolute top-full left-0 right-0 bg-white shadow-md md:hidden z-50 mobile-menu hidden">
+          <div class="absolute top-full left-0 right-0 bg-white shadow-md  z-50 mobile-menu hidden" id="mobilevisbile">
             <div class="flex flex-col p-4">
               <a href="#services" class="py-2 text-gray-700 hover:text-decisive-blue cursor-pointer">Services</a>
               <a href="#experience" class="py-2 text-gray-700 hover:text-decisive-blue cursor-pointer">Advising</a>
@@ -63,10 +67,14 @@
               <a href="#testimonials" class="py-2 text-gray-700 hover:text-decisive-blue cursor-pointer">Testimonials</a>
             </div>
           </div>
-          
-          <button class="bg-white text-decisive-blue hover:bg-blue-50 px-8 py-3 rounded-md font-medium" style="border: 2px solid;">Contact Mahesh</button>
-          <button class="btn-primary">Pay Now</button>
         </div>
+        </div>
+          <div id="menubuttons">
+          <button class="btn-primary" style="border: 2px solid;background: #fff;color: #345dbe;">Contact Mahesh</button>
+          <button class="btn-primary" id="paynowbtn">Pay Now</button>
+        </div>
+        </div>
+      </div>
       </nav>
 
       <!-- Hero Section -->
@@ -317,6 +325,7 @@
               <button 
                 type="submit"
                 class="btn-primary"
+                id="btnsubscribe"
               >
                 SUBSCRIBE NOW
               </button>
@@ -327,7 +336,7 @@
 
       <!-- Footer -->
       <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-6" style="display: flex;flex-direction: row;">
+        <div class="container mx-auto px-6" style="display: flex;justify-content: space-between;" id="footersection">
           <div class="text-center mb-8">
             <p class="text-sm">© 2025 Thakur International - All Rights Reserved.</p>
           </div>
