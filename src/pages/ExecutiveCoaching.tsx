@@ -1,15 +1,15 @@
 
 import { Button } from "@/components/ui/button";
-import Img_06 from '.././images/Img_06.png';
-import Img_3 from '.././images/Img_05.png';
-import Img_2 from '.././images/Img_04.png';
+import Img_01 from '.././images/Img_06.png';
+import Img_03 from '.././images/Img_05.png';
+import Img_02 from '.././images/Img_04.png';
 import Testimonials_arrow_left from '.././images/Testimonials_arrow-left.png';
 import Testimonials_arrow_right from '.././images/Testimonials_arrow-right.png';
 import gg_arrow_up_o from '.././images/gg_arrow-up-o.png';
 import Icon_06 from '.././images/Icon_06.png';
 import Icon_05 from '.././images/Icon_05.png';
 import Icon_04 from '.././images/Icon_04.png';
-import Img_1 from '.././images/Img.png';
+import Img from '.././images/Img.png';
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { useState } from "react";
@@ -22,18 +22,21 @@ const ExecutiveCoaching = () => {
       name: "Nivedita Ojha",
       position: "VP Product Management",
       company: "Autodesk",
+      image: "Img",
       quote: "Mahesh helped me establish myself as a visionary leader in my organization. As a leader of people and an owner of a portfolio of products..."
     },
     {
       name: "Mark Elimer",
       position: "Chief Technology Officer",
       company: "Hackensack Meridian Health",
+      image: "Img_04",
       quote: "Mahesh's coaching approach is highly insightful and results oriented. He deeply identified areas where I could improve my leadership skills, communication, and decision-making processes."
     },
     {
       name: "Kent Lopez",
       position: "VP of Sales",
       company: "Autodesk",
+      image:"Img_05",
       quote: "Mahesh approaches board and C-Suite advisory with a mixture of mentorship and partnership. My role involves working with partners and board members..."
     }
   ];
@@ -211,7 +214,7 @@ const ExecutiveCoaching = () => {
                     <div className="testimonial-header">
                       <div className="customerabout">
                         <div className="customerImage">
-                          <img src= {`Img_${index}`} alt={testimonial.name} className="testimonial-image" />
+                          <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
                         </div>
                         <div className="customerdesc">
                           <h3 className="testimonial-name">{testimonial.name}</h3>
