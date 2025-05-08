@@ -84,16 +84,18 @@ function HomeContent() {
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
             <div className="md:w-2/3">
               <h3 className="text-xl font-semibold text-decisive-blue mb-4">
-                Mahesh M. Thakur is a top artificial intelligence leader, advisor, and investor.
+                Mahesh M. Thakur is a top Artificial Intelligence leader, advisor, and investor
               </h3>
               <p className="mb-4">
-                With over a decade of experience in AI...
+                  Mahesh is an AI industry leader with a 20+ years of executive experience at top tech firms including Microsoft, 
+                  Amazon, Intuit, and GoDaddy. He has led large-scale AI product development, driven significant revenue growth, 
+                  and invested in successful startups. As a member of MG 100, he now coaches C-suite leaders on leadership and AI adoption, 
+                  combining deep technical expertise with strategic business insight.
               </p>
               <p className="mb-4">
-                Mahesh was one of the youngest leaders to build and scale...
-              </p>
-              <p className="mb-4">
-                As a member of the MBA 100...
+              His achievements include building and scaling an Artificial Intelligence product at Microsoft,
+               reaching $600 million in annual revenue at GoDaddy, boosting
+              Microsoft 365 subscription revenue by 25% through a key partnership with Microsoft.
               </p>
             </div>
             <div className="md:w-1/3">

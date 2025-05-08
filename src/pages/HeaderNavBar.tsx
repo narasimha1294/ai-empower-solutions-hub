@@ -58,7 +58,7 @@ const HeaderNavbar = () => {
               <a href="#services" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Services</a>
               <a href="#experience" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Advising</a>
               <a href="#courses" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Masterminds</a>
-              <a href="/executivecoaching.html" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Executive Coaching</a>
+              <a href="/executive-coaching" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Executive Coaching</a>
               <a href="#newsletter" className="text-gray-700 hover:text-decisive-blue cursor-pointer">About</a>
               <a href="#articles" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Resources</a>
               <a href="#testimonials" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Testimonials</a>
