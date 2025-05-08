@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,7 +31,6 @@ const Navbar = () => {
     { label: "Partners", href: "#partners" },
     { label: "Achievements", href: "#achievements" },
     { label: "Contact", href: "#contact" },
-    { label: "Executive Coaching", to: "/executive-coaching" },
   ];
 
   return (
@@ -48,25 +46,15 @@ const Navbar = () => {
         
         <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
-            item.to ? (
-              <Link
-                key={item.label}
-                to={item.to}
-                className="text-gray-700 hover:text-ai-blue transition-colors font-medium"
-              >
-                {item.label}
-              </Link>
-            ) : (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-gray-700 hover:text-ai-blue transition-colors font-medium"
-              >
-                {item.label}
-              </a>
-            )
+            <a
+              key={item.label}
+              href={item.href}
+              className="text-gray-700 hover:text-ai-blue transition-colors font-medium"
+            >
+              {item.label}
+            </a>
           ))}
-          <Button onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>
+          <Button href="#contact" variant="default">
             Get Started
           </Button>
         </div>
@@ -87,25 +75,14 @@ const Navbar = () => {
         <div className="md:hidden absolute top-full w-full bg-white shadow-lg animate-fade-in">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             {navItems.map((item) => (
-              item.to ? (
-                <Link
-                  key={item.label}
-                  to={item.to}
-                  onClick={toggleMenu}
-                  className="text-gray-700 hover:text-ai-blue transition-colors px-4 py-2 font-medium"
-                >
-                  {item.label}
-                </Link>
-              ) : (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  onClick={toggleMenu}
-                  className="text-gray-700 hover:text-ai-blue transition-colors px-4 py-2 font-medium"
-                >
-                  {item.label}
-                </a>
-              )
+              <a
+                key={item.label}
+                href={item.href}
+                onClick={toggleMenu}
+                className="text-gray-700 hover:text-ai-blue transition-colors px-4 py-2 font-medium"
+              >
+                {item.label}
+              </a>
             ))}
             <Button className="mx-4" onClick={() => {
               toggleMenu();
