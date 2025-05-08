@@ -1,8 +1,8 @@
 
 import { Button } from "@/components/ui/button";
-import Img_01 from '.././images/Img_06.png';
-import Img_03 from '.././images/Img_05.png';
-import Img_02 from '.././images/Img_04.png';
+import Img_06 from '.././images/Img_06.png';
+import Img_05 from '.././images/Img_05.png';
+import Img_04 from '.././images/Img_04.png';
 import Testimonials_arrow_left from '.././images/Testimonials_arrow-left.png';
 import Testimonials_arrow_right from '.././images/Testimonials_arrow-right.png';
 import gg_arrow_up_o from '.././images/gg_arrow-up-o.png';
