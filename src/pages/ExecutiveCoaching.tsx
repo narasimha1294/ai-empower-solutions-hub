@@ -22,7 +22,7 @@ const ExecutiveCoaching = () => {
       name: "Nivedita Ojha",
       position: "VP Product Management",
       company: "Autodesk",
-      image: "Img",
+      image: "src\\images\\Img_03.png",
       quote: "Mahesh helped me establish myself as a visionary leader in my organization. As a leader of people and an owner of a portfolio of products..."
     },
     {
