@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Img_06 from '.././images/Img_06.png';
 import Img_05 from '.././images/Img_05.png';
 import Img_04 from '.././images/Img_04.png';
+import Img_03 from '.././images/Img_03.png';
 import Testimonials_arrow_left from '.././images/Testimonials_arrow-left.png';
 import Testimonials_arrow_right from '.././images/Testimonials_arrow-right.png';
 import gg_arrow_up_o from '.././images/gg_arrow-up-o.png';
@@ -16,27 +17,47 @@ import { useState } from "react";
 
 const ExecutiveCoaching = () => {
   const [activeTestimonialIndex, setActiveTestimonialIndex] = useState(0);
+  // const ImageComponent = ({ imageName }) => {
+  //   let imageSrc;
+  //   try {
+  //     imageSrc = require(`.././images/${imageName}`);
+  //   } catch (err) {
+  //     console.error('Image not found:', imageName);
+  //     imageSrc = ''; // fallback or error image
+  //   }
   
+  //   return <img src={imageSrc} alt={imageName} className="testimonial-image"/>;
+  // };
+  const ImageComponent = ({ imageName }) => {
+    const imageSrc = images[imageName] || ''; // fallback
+  
+    return <img src={imageSrc} alt={imageName} />;
+  };
+  const images = {
+    'Img_03.png': Img_03,
+    'Img_04.png': Img_04,
+    'Img_05.png': Img_05,
+  };
   const testimonials = [
     {
       name: "Nivedita Ojha",
       position: "VP Product Management",
       company: "Autodesk",
-      image: "src\\images\\Img_03.png",
+      image: "Img_03.png",
       quote: "Mahesh helped me establish myself as a visionary leader in my organization. As a leader of people and an owner of a portfolio of products..."
     },
     {
       name: "Mark Elimer",
       position: "Chief Technology Officer",
       company: "Hackensack Meridian Health",
-      image: "Img_04",
+      image: "Img_04.png",
       quote: "Mahesh's coaching approach is highly insightful and results oriented. He deeply identified areas where I could improve my leadership skills, communication, and decision-making processes."
     },
     {
       name: "Kent Lopez",
       position: "VP of Sales",
       company: "Autodesk",
-      image:"Img_05",
+      image:"Img_05.png",
       quote: "Mahesh approaches board and C-Suite advisory with a mixture of mentorship and partnership. My role involves working with partners and board members..."
     }
   ];
@@ -214,7 +235,8 @@ const ExecutiveCoaching = () => {
                     <div className="testimonial-header">
                       <div className="customerabout">
                         <div className="customerImage">
-                          <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
+                          <ImageComponent imageName={testimonial.image}  />
+                          {/* <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" /> */}
                         </div>
                         <div className="customerdesc">
                           <h3 className="testimonial-name">{testimonial.name}</h3>
