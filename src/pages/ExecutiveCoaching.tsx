@@ -7,6 +7,8 @@ import Testimonials_arrow_left from '.././images/Testimonials_arrow-left.png';
 import Testimonials_arrow_right from '.././images/Testimonials_arrow-right.png';
 import gg_arrow_up_o from '.././images/gg_arrow-up-o.png';
 import Icon_06 from '.././images/Icon_06.png';
+import Icon_05 from '.././images/Icon_05.png';
+import Icon_04 from '.././images/Icon_04.png';
 import Img from '.././images/Img.png';
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -20,21 +22,21 @@ const ExecutiveCoaching = () => {
       name: "Nivedita Ojha",
       position: "VP Product Management",
       company: "Autodesk",
-      image: "./src/images/Img_03.png",
+      image: {Img},
       quote: "Mahesh helped me establish myself as a visionary leader in my organization. As a leader of people and an owner of a portfolio of products..."
     },
     {
       name: "Mark Elimer",
       position: "Chief Technology Officer",
       company: "Hackensack Meridian Health",
-      image: "./src/images/Img_04.png",
+      image: {Img_04},
       quote: "Mahesh's coaching approach is highly insightful and results oriented. He deeply identified areas where I could improve my leadership skills, communication, and decision-making processes."
     },
     {
       name: "Kent Lopez",
       position: "VP of Sales",
       company: "Autodesk",
-      image: "./src/images/Img_05.png",
+      image: {Img_05},
       quote: "Mahesh approaches board and C-Suite advisory with a mixture of mentorship and partnership. My role involves working with partners and board members..."
     }
   ];
@@ -114,7 +116,7 @@ const ExecutiveCoaching = () => {
               <div className="program-card">
                 <div className="card-icon-container">
                   <div className="card-icon card-icon-yellow">
-                    <img src={Img_04} alt="Mastermind Sessions" />
+                    <img src={Icon_04} alt="Mastermind Sessions" />
                   </div>
                 </div>
                 <h3 className="card-title">Monthly Mastermind Sessions</h3>
@@ -127,7 +129,7 @@ const ExecutiveCoaching = () => {
               <div className="program-card">
                 <div className="card-icon-container">
                   <div className="card-icon card-icon-blue">
-                    <img src={Img_05} alt="One-on-One Coaching" />
+                    <img src={Icon_05} alt="One-on-One Coaching" />
                   </div>
                 </div>
                 <h3 className="card-title">One-on-One Coaching with Mahesh M. Thakur</h3>
