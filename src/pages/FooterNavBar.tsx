@@ -1,5 +1,5 @@
 import React from "react";
-
+import Subscribe_BG from '.././images/Subscribe_BG.png';
 const FooterNavBar = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,7 +13,7 @@ const FooterNavBar = () => {
       <section className="py-4 bg-circuit-bg text-white relative" id="newsletter">
         <div
           className="absolute inset-0 bg-image opacity-40 bg-cover bg-center"
-          style={{ backgroundImage: "url('./src/images/Subscribe_BG.png')"}}
+          style={{ backgroundImage: `url(${Subscribe_BG})`}}
         ></div>
 
         <div className="container mx-auto px-6 py-4 relative z-10">

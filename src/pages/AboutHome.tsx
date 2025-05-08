@@ -11,6 +11,7 @@ import ArticlesImg3 from '.././images/Articles_Img3.png';
 import LeftArrow from '.././images/Testimonials_arrow-left.png';
 import RightArrow from '.././images/Testimonials_arrow-right.png';
 import TestimonialImg from '.././images/Testimonials_Eimer_Mark.png';
+import aicoursesBG from '.././images/aicoursesBG.png';
 
 // Logos
 import HP from '.././images/HP.png';
@@ -103,7 +104,7 @@ function HomeContent() {
       </section>
 
       {/* AI Courses Section */}
-      <section className="py-16 bg-white" id="courses" style={{ backgroundImage: `url('./src/images/aicoursesBG.png')` }}>
+      <section className="py-16 bg-white" id="courses" style={{ backgroundImage: `url(${aicoursesBG})` }}>
         <div className="container mx-auto px-6">
           <h2 className="section-heading">Learn AI with Mahesh M. Thakur</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

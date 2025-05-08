@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Logo from '.././images/Logo.png';
 const HeaderNavbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -14,7 +15,7 @@ const HeaderNavbar = () => {
         <div id="menuitems">
         <div id="#imagesection">
           <a href="/" className="flex items-center">
-                <img src="./src/images/Logo.png" alt="Logo" id="logoimage" />
+                <img src={Logo} alt="Logo" id="logoimage" />
           </a>
           </div>
           <div id="menusection">
