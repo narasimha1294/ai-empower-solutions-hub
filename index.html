@@ -27,7 +27,14 @@
   <body>
     <div id="root"></div>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <!-- <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script> -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const anchor = document.getElementById("lovable-badge");
+      if (anchor) {
+        anchor.remove();
+      }
+    });
+  </script>
 </html>
