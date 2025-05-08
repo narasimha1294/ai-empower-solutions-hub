@@ -41,7 +41,7 @@ const ExecutiveCoaching = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
+      
       <div className="coaching">
         <section className="hero-section">
           <div className="hero-content">
@@ -234,7 +234,6 @@ const ExecutiveCoaching = () => {
           </div>
         </section>
       </div>
-      <Footer />
     </div>
   );
 };
