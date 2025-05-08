@@ -1,5 +1,13 @@
 
 import { Button } from "@/components/ui/button";
+import Img_06 from '.././images/Img_06.png';
+import Img_05 from '.././images/Img_05.png';
+import Img_04 from '.././images/Img_04.png';
+import Testimonials_arrow_left from '.././images/Testimonials_arrow-left.png';
+import Testimonials_arrow_right from '.././images/Testimonials_arrow-right.png';
+import gg_arrow_up_o from '.././images/gg_arrow-up-o.png';
+import Icon_06 from '.././images/Icon_06.png';
+import Img from '.././images/Img.png';
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { useState } from "react";
@@ -65,7 +73,7 @@ const ExecutiveCoaching = () => {
             <div className="why-content">
               <div className="why-graphic" style={{ marginRight: "2%" }}>
                 <div className="">
-                  <img src="./src/images/Img_06.png" alt="Why High Performance" />
+                  <img src={Img_06} alt="Why High Performance" />
                 </div>
               </div>
               
@@ -106,7 +114,7 @@ const ExecutiveCoaching = () => {
               <div className="program-card">
                 <div className="card-icon-container">
                   <div className="card-icon card-icon-yellow">
-                    <img src="./src/images/Icon_04.png" alt="Mastermind Sessions" />
+                    <img src={Img_04} alt="Mastermind Sessions" />
                   </div>
                 </div>
                 <h3 className="card-title">Monthly Mastermind Sessions</h3>
@@ -119,7 +127,7 @@ const ExecutiveCoaching = () => {
               <div className="program-card">
                 <div className="card-icon-container">
                   <div className="card-icon card-icon-blue">
-                    <img src="./src/images/Icon_05.png" alt="One-on-One Coaching" />
+                    <img src={Img_05} alt="One-on-One Coaching" />
                   </div>
                 </div>
                 <h3 className="card-title">One-on-One Coaching with Mahesh M. Thakur</h3>
@@ -132,7 +140,7 @@ const ExecutiveCoaching = () => {
               <div className="program-card">
                 <div className="card-icon-container">
                   <div className="card-icon card-icon-red">
-                    <img src="./src/images/Icon_06.png" alt="Leadership Retreat" />
+                    <img src={Icon_06} alt="Leadership Retreat" />
                   </div>
                 </div>
                 <h3 className="card-title">Annual Leadership Retreat</h3>
@@ -160,7 +168,7 @@ const ExecutiveCoaching = () => {
               </div>
               
               <div className="who-image">
-                <img src="./src/images/Img.png" alt="AI Assistant" />
+                <img src={Img} alt="AI Assistant" />
               </div>
             </div>
           </div>
@@ -192,7 +200,7 @@ const ExecutiveCoaching = () => {
                 aria-label="Previous testimonial"
                 onClick={prevTestimonial}
               >
-                <img src="./src/images/Testimonials_arrow-left.png" alt="Previous" />
+                <img src={Testimonials_arrow_left} alt="Previous" />
               </button>
               
               <div className="testimonials-slider">
@@ -217,7 +225,7 @@ const ExecutiveCoaching = () => {
                     <p className="testimonial-quote">{testimonial.quote}</p>
                     <div style={{ display: "flex", justifyContent: "end" }}>
                       <button className="testimonial-read-more">Read More</button>
-                      <img src="./src/images/gg_arrow-up-o.png" style={{ marginLeft: "2%" }} alt="" />
+                      <img src={gg_arrow_up_o} style={{ marginLeft: "2%" }} alt="" />
                     </div>
                   </div>
                 ))}
@@ -228,7 +236,7 @@ const ExecutiveCoaching = () => {
                 aria-label="Next testimonial"
                 onClick={nextTestimonial}
               >
-                <img src="./src/images/Testimonials_arrow-right.png" alt="Next" />
+                <img src={Testimonials_arrow_right} alt="Next" />
               </button>
             </div>
           </div>
