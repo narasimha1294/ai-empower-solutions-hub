@@ -1,5 +1,8 @@
+
 import React, { useState } from 'react';
-import Logo from '.././images/Logo.png';
+import { Link } from 'react-router-dom';
+import Logo from '../images/Logo.png';
+
 const HeaderNavbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -14,9 +17,9 @@ const HeaderNavbar = () => {
         <div id="menucontent">
         <div id="menuitems">
         <div id="#imagesection">
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
                 <img src={Logo} alt="Logo" id="logoimage" />
-          </a>
+          </Link>
           </div>
           <div id="menusection">
           <button
@@ -45,24 +48,24 @@ const HeaderNavbar = () => {
               )}
             </button>
             <div className="hidden md:flex space-x-6" id="desktopvisibile">
-            <a href="#services" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Services</a>
-            <a href="#experience" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Advising</a>
-            <a href="#courses" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Masterminds</a>
-            <a href="/executive-coaching" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Executive Coaching</a>
-            <a href="#newsletter" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">About</a>
-            <a href="#articles" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Resources</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Testimonials</a>
+            <Link to="/#services" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Services</Link>
+            <Link to="/#experience" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Advising</Link>
+            <Link to="/#courses" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Masterminds</Link>
+            <Link to="/executive-coaching" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Executive Coaching</Link>
+            <Link to="/#newsletter" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">About</Link>
+            <Link to="/#articles" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Resources</Link>
+            <Link to="/#testimonials" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Testimonials</Link>
           </div>
           {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-md z-50" id="mobilevisible">
             <div className="flex flex-col p-4 space-y-2">
-              <a href="#services" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Services</a>
-              <a href="#experience" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Advising</a>
-              <a href="#courses" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Masterminds</a>
-              <a href="/executive-coaching" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Executive Coaching</a>
-              <a href="#newsletter" className="text-gray-700 hover:text-decisive-blue cursor-pointer">About</a>
-              <a href="#articles" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Resources</a>
-              <a href="#testimonials" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Testimonials</a>
+              <Link to="/#services" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Services</Link>
+              <Link to="/#experience" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Advising</Link>
+              <Link to="/#courses" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Masterminds</Link>
+              <Link to="/executive-coaching" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Executive Coaching</Link>
+              <Link to="/#newsletter" className="text-gray-700 hover:text-decisive-blue cursor-pointer">About</Link>
+              <Link to="/#articles" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Resources</Link>
+              <Link to="/#testimonials" className="text-gray-700 hover:text-decisive-blue cursor-pointer">Testimonials</Link>
             </div>
           </div>
         )}

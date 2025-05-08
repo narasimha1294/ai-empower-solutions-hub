@@ -54,7 +54,10 @@ const Navbar = () => {
               {item.label}
             </a>
           ))}
-          <Button href="#contact" variant="default">
+          <Button 
+            onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}
+            variant="default"
+          >
             Get Started
           </Button>
         </div>
@@ -84,10 +87,13 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
-            <Button className="mx-4" onClick={() => {
-              toggleMenu();
-              document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'});
-            }}>
+            <Button 
+              className="mx-4" 
+              onClick={() => {
+                toggleMenu();
+                document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'});
+              }}
+            >
               Get Started
             </Button>
           </div>
