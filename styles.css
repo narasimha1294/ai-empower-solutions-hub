@@ -620,6 +620,9 @@ body {
     #desktopvisibile{
         display: flex;
     }
+    #mobilevisible{
+      display: none;
+    }
     .md\:hidden {
         display: none;
       } 
@@ -657,6 +660,9 @@ body {
     .md\:hidden {
         display: none;
       } 
+      #mobilevisible{
+        display: flex;
+      }
        
   #togglemenubutton{
     display: block;
@@ -752,6 +758,9 @@ body {
         display: none;
     }
     
+    #mobilevisible{
+      display: flex;
+    }
   #togglemenubutton{
     display: block !important;
   }
@@ -780,6 +789,9 @@ body {
     }
     #desktopvisibile{
         display: none;
+    }
+    #mobilevisible{
+      display: flex;
     }
     .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
         --tw-space-x-reverse: 0;

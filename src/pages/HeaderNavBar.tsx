@@ -25,6 +25,7 @@ const HeaderNavbar = () => {
               aria-expanded={isMobileMenuOpen}
               aria-controls="mobilevisible"
               className="text-gray-700 md:hidden mobile-menu-button"
+              id="togglemenubutton"
             >
               {isMobileMenuOpen ? (
                 // X Icon
@@ -43,7 +44,7 @@ const HeaderNavbar = () => {
                 </svg>
               )}
             </button>
-            <div className="hidden md:flex space-x-6" id="desktopvisible">
+            <div className="hidden md:flex space-x-6" id="desktopvisibile">
             <a href="#services" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Services</a>
             <a href="#experience" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Advising</a>
             <a href="#courses" className="text-gray-700 hover:text-decisive-blue transition-colors cursor-pointer">Masterminds</a>
