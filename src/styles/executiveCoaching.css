@@ -1,0 +1,380 @@
+
+/* Executive Coaching Page Styles */
+
+.coaching {
+  padding: 2%;
+  padding-top: 0%;
+}
+
+.hero-section {
+  padding: 3rem 1.5rem 5rem;
+  background: var(--bg-blue-gradient);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0rem;
+  background-image: url('../images/Banner.png');
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Why section */
+.why-section {
+  padding: 5rem 0;
+}
+
+.why-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.why-graphic {
+  margin-bottom: 2rem;
+  width: 30%;
+}
+
+.why-text {
+  width: 70%;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.section-highlight p {
+  margin-bottom: 1.5rem;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.feature-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #666;
+}
+
+/* Program section */
+.program-section {
+  padding: 2rem 0;
+  background-color: #F2F2F2;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.program-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.program-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.card-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+}
+
+.card-icon-yellow {
+  background-color: #fef3c7;
+}
+
+.card-icon-blue {
+  background-color: #dbeafe;
+}
+
+.card-icon-red {
+  background-color: #fee2e2;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  color: #666;
+}
+
+/* Who section */
+.who-section {
+  padding: 2rem 0;
+}
+
+.who-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.who-text {
+  width: 70%;
+}
+
+.who-image {
+  width: 30%;
+}
+
+.who-text p.section-subtitle {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  color: #0058F0;
+  margin-bottom: 2%;
+}
+
+/* Apply section */
+.apply-section {
+  padding: 2rem 0;
+  background-color: #F2F2F2;
+  text-align: center;
+}
+
+.apply-section h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.apply-section p {
+  font-size: 16px;
+  margin-bottom: 2%;
+  font-weight: 300;
+}
+
+.btn-large {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Testimonials section */
+.testimonials-section {
+  padding: 3rem 0;
+}
+
+.testimonials-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.testimonial-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.testimonial-prev {
+  left: 0;
+}
+
+.testimonial-next {
+  right: 0;
+}
+
+.testimonials-slider {
+  padding: 0 3rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.53em;
+  border: 1px #ccc solid;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.testimonial-header {
+  margin-bottom: 1rem;
+}
+
+.customerabout {
+  display: flex;
+}
+
+.customerImage {
+  width: 30%;
+}
+
+.customerdesc {
+  width: 70%;
+  margin-left: 2%;
+}
+
+.testimonial-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  color: #A88E0E;
+  text-align: left;
+}
+
+.testimonial-position {
+  font-size: 12px;
+  color: #666;
+  text-align: left;
+}
+
+.testimonial-company {
+  font-size: 10px;
+  color: #5B5B5B;
+  text-align: left;
+}
+
+.testimonial-quote {
+  color: #333;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.testimonial-read-more {
+  color: #0058F0;
+  background: none;
+  border: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .why-content,
+  .who-content {
+    flex-direction: column;
+  }
+  
+  .why-graphic,
+  .why-text,
+  .who-text,
+  .who-image {
+    width: 100%;
+  }
+  
+  .program-cards,
+  .testimonials-slider {
+    grid-template-columns: 1fr;
+  }
+  
+  .customerabout {
+    display: flex;
+  }
+  
+  .customerdesc {
+    width: 100%;
+  }
+  
+  .customerImage {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .why-content,
+  .who-content {
+    flex-direction: column;
+  }
+  
+  .why-graphic,
+  .why-text,
+  .who-text,
+  .who-image {
+    width: 100%;
+  }
+  
+  .program-cards,
+  .testimonials-slider {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .customerabout {
+    flex-direction: column;
+  }
+}
